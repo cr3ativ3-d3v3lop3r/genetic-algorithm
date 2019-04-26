@@ -28,6 +28,11 @@ string FileReader::getFileName()
 // FileLines accessor
 vector<string> FileReader::getFileLines()
 {
+
+    // First lets read the file lines into
+    // a vector we can deal with.
+    readFileLines();
+
     return _fileLines;
 }
 

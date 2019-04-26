@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include <vector>
 #include "../include/FileReader.h"
 
 using namespace std;
@@ -15,13 +16,12 @@ int main(void)
 
     FileReader* fr = new FileReader("../../resources/data.dat");
 
-    // First read the file lines
-    fr->readFileLines();
+    vector<string> lines = fr->getFileLines();
 
     // Secondly, display the file lines
-    for (size_t i = 0; i < fr->getFileLines().size(); ++i)
+    for (size_t i = 0; i < lines.size(); ++i)
     {
-        cout << fr->getFileLines()[i] << endl;
+        cout << lines[i] << endl;
     }
 
     delete fr;

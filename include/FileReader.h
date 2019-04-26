@@ -22,11 +22,12 @@ class FileReader
 
         string getFileName();
         vector<string> getFileLines();
-        void readFileLines();
-
+       
     private:
         string _fileName;
         vector<string> _fileLines;
+
+        void readFileLines();
 };
 
 #endif
