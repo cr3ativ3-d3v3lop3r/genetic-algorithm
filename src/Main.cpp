@@ -15,7 +15,14 @@ int main(void)
 
     FileReader* fr = new FileReader("../../resources/data.dat");
 
+    // First read the file lines
     fr->readFileLines();
+
+    // Secondly, display the file lines
+    for (size_t i = 0; i < fr->getFileLines().size(); ++i)
+    {
+        cout << fr->getFileLines()[i] << endl;
+    }
 
     delete fr;
 

@@ -38,7 +38,6 @@ void FileReader::readFileLines()
     
     for (string line; getline(file, line); )
     {
-        cout << line << endl;
-        _fileLines.push_back(line);
+       _fileLines.push_back(line);
     }
 }
