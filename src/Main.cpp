@@ -1,5 +1,5 @@
 /*
- * Filename: main.cpp
+ * Filename: Main.cpp
  * Author: Callum Cooper
  * Date: 26-04-19
  * Description: Entry point to the application.
