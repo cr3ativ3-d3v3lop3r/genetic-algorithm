@@ -13,9 +13,10 @@ using namespace std;
 int main(void)
 {
 
-    FileReader* fr = new FileReader();
+    FileReader* fr = new FileReader("/Users/CCR52/workspace/c++/genetic-algorithm/resources/data.txt");
 
-    fr->sayHello();
+    fr->readFileLines();
+
     delete fr;
 
     cin.ignore(0);

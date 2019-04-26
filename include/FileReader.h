@@ -1,7 +1,7 @@
 /*
  * Filename: FileReader.h
  * Author: Callum Cooper
- * Date: 24-04-19
+ * Date: 26-04-19
  * Description: Interface to read file input.
  */
 
@@ -9,18 +9,24 @@
 #define FILE_READER_H_
 
 #include <iostream>
+#include <fstream>
+#include <vector>
 
 using namespace std;
 
 class FileReader
 {
     public:
-        FileReader();
+        FileReader(string fileName = "");
         ~FileReader();
 
-        void sayHello();
+        string getFileName();
+        vector<string> getFileLines();
+        void readFileLines();
 
     private:
+        string _fileName;
+        vector<string> _fileLines;
 };
 
 #endif
