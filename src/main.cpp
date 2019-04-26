@@ -13,7 +13,7 @@ using namespace std;
 int main(void)
 {
 
-    FileReader* fr = new FileReader("/Users/CCR52/workspace/c++/genetic-algorithm/resources/data.txt");
+    FileReader* fr = new FileReader("../../resources/data.txt");
 
     fr->readFileLines();
 
