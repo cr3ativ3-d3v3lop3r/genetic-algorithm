@@ -13,7 +13,7 @@ using namespace std;
 int main(void)
 {
 
-    FileReader* fr = new FileReader("../../resources/data.txt");
+    FileReader* fr = new FileReader("../../resources/data.dat");
 
     fr->readFileLines();
 
